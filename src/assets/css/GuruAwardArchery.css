@@ -1,0 +1,67 @@
+.guru_award_archery .lottie-container {
+    transform: rotateY(180deg);
+}
+
+.guru_award_archery .archer-text {
+    left: auto;
+    right: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: right;
+    max-width: 560px;
+}
+
+.archery_main_heading {
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    z-index: 10;
+}
+
+.guru_award_archery .archer-text p,
+.guru_award_archery .archer-text .reveal_heading {
+    text-align: right;
+}
+
+@media screen and (max-width: 1025px) {
+    .archery_main_heading {
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center;
+        margin-bottom: 50px;
+        padding: 0 20px;
+        z-index: 5;
+    }
+
+    .guru_award_archery .archer-text {
+        right: 0;
+        top: 0;
+        transform: none;
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+        padding-top: 20px;
+        max-width: 100%;
+    }
+
+    .guru_award_archery .archer-text img {
+        margin: 0 auto 20px;
+        display: block;
+    }
+
+    .guru_award_archery .archer-text p,
+    .guru_award_archery .archer-text .reveal_heading {
+        text-align: center;
+    }
+
+    .guru_award_archery .archer-text .reveal_heading {
+        font-size: 28px !important;
+        margin-bottom: 15px;
+    }
+
+    /* 
+    .guru_award_archery .archer-section {
+        display: none;
+    } */
+}

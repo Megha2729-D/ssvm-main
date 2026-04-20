@@ -1,0 +1,211 @@
+nav {
+    width: 100%;
+}
+
+.navbar .section_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    z-index: 1000;
+    border-radius: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 15px;
+    width: 98%;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* .navbar-fixed .section_container {
+    position: fixed;
+    top: 15px;
+    animation: navSlide 0.4s ease;
+} */
+
+@keyframes navSlide {
+    from {
+        transform: translateY(-120%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.left_logo {
+    width: auto;
+}
+
+.right_logo {
+    width: 190px;
+}
+
+.logo-video {
+    height: 85px;
+}
+
+.initiative_logo {
+    height: 55px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links li {
+    color: #000000;
+    list-style: none;
+    font-weight: 600;
+    letter-spacing: 0px;
+    cursor: pointer;
+}
+
+.nav-item {
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.char {
+    display: inline-block;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+    background: transparent;
+}
+
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    width: 100%;
+}
+
+.navbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+/* RIGHT AREA */
+.right_area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* HAMBURGER */
+.hamburger {
+    display: none;
+    font-size: 26px;
+    background: none;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 992px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .logo-video {
+        height: 90px;
+    }
+
+    .navbar-inner {
+        padding: 10px 20px;
+    }
+
+    .left_logo {
+        width: 125px;
+    }
+}
+
+/* ================= BACKDROP ================= */
+.backdrop {
+    position: fixed;
+    inset: 0;
+    background: #00000099;
+    backdrop-filter: 10px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+/* ================= OVERLAY MENU ================= */
+.mobile_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* max-width: 320px; */
+    height: 100vh;
+    background: #111;
+    transform: translateX(-100%);
+    z-index: 1001;
+    padding: 15px 20px;
+}
+
+.nav_logo {
+    width: 125px;
+}
+
+.mobile_nav {
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+}
+
+.mobile_nav li {
+    color: #fff;
+    padding: 15px 0;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+/* CLOSE BUTTON */
+.close_btn {
+    font-size: 22px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+    ul.nav-links {
+        display: none !important;
+    }
+
+    .initiative_logo {
+        height: 50px !important;
+    }
+
+    .right_logo {
+        justify-content: flex-end !important;
+    }
+}

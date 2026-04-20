@@ -1,0 +1,138 @@
+    /* * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    :root {
+        --dark: #070707;
+        --size-index: calc(1vw + 1vh);
+        --transition: .75s cubic-bezier(0.255, 0.670, 0.000, 1.010);
+    }
+
+    .parallax_parent {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        background: var(--dark);
+        color: #fff;
+        overflow: hidden;
+        line-height: 1.7;
+        font-size: calc(var(--size-index) * .8);
+    }
+
+    .parallax_parent h1 {
+        font-size: 50px !important;
+    }
+
+    .parallax_parent .slider {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 10vh;
+        overflow: visible;
+    }
+
+    .parallax_parent .swiper-wrapper {
+        transition: var(--transition) !important;
+        will-change: transform;
+    }
+
+    .parallax_parent .slider_bg {
+        position: absolute;
+        width: 100%;
+    }
+
+    .parallax_parent .slider__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transform: none !important;
+    }
+
+    .parallax_parent .slider__item {
+        max-height: 75vh;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .parallax_parent .slider__item.opened {
+        z-index: 3;
+        transform: rotate(-15deg) scale(1.5);
+        box-shadow: rgba(0, 0, 0, .75) 0 0 0 10000px;
+    }
+
+    .parallax_parent .slider_bg {
+        z-index: 0;
+        transform: rotate(-20deg) !important;
+        top: -90vh;
+        left: -10vh;
+        opacity: .2;
+        filter: blur(140px) saturate(9);
+    }
+
+    .parallax_parent .slider_bg .slider__item {
+        max-height: 100vh;
+        cursor: default;
+    }
+
+    .parallax_parent .description {
+        position: absolute;
+        font-size: calc(var(--size-index) * .8);
+        top: 20vh;
+        left: 8vw;
+        max-width: 24vw;
+        transition: opacity var(--transition), transform var(--transition);
+    }
+
+    .parallax_parent .description p {
+        opacity: .9;
+        transition: transform var(--transition);
+        transition-duration: 3s;
+    }
+
+    .parallax_parent .description.hidden {
+        opacity: 0;
+        transform: translateY(5vh);
+    }
+
+    .parallax_parent .description.hidden p {
+        transform: translateY(2vh);
+    }
+
+    .parallax_parent .logo {
+        font-size: calc(var(--size-index) * 3.6);
+        font-weight: 900;
+        background: linear-gradient(45deg, #f36100, #884985, #7c1212);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    @media screen and (max-width: 991px) {
+        .parallax_parent .description {
+            max-width: 100%;
+            top: 30px;
+        }
+
+        .parallax_parent .slider {
+            position: relative;
+            top: 18vh;
+            height: auto;
+        }
+
+        .parallax_parent {
+            position: relative;
+            width: 100%;
+            height: 50vh;
+
+        }
+
+        .parallax_parent .description.hidden {
+            opacity: 1;
+            transform: translateY(0vh);
+        }
+    } */

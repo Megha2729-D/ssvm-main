@@ -1,0 +1,256 @@
+.horse-section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    position: relative;
+}
+
+.horse-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.horse-lottie {
+    width: 100vw;
+    max-width: none;
+}
+
+.horse-lottie svg {
+    width: 100vw !important;
+    height: auto !important;
+    max-width: none !important;
+    display: block;
+}
+
+.horse-text {
+    position: absolute;
+    bottom: 60px;
+    left: 80px;
+    max-width: 500px;
+}
+
+.horse-text h2 {
+    font-size: 60px;
+    color: #94ffe3;
+}
+
+.horse-text p {
+    font-size: 18px;
+    color: #94ffe3;
+}
+
+.mission-box {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    color: #000000;
+    padding: 0 50px;
+    border-radius: 10px;
+}
+
+.mission-box * {
+    color: #000000;
+}
+
+.missin_inner_part .mission_shape {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-origin: center center;
+}
+
+.horse-content-box {
+    transform-origin: center center;
+}
+
+/* .missin_inner_part::before {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    width: 600px;
+    height: 600px;
+    background: #f2ff33;
+    border-radius: 50%;
+    top: -250px;
+    left: 0;
+    right: 0;
+    margin: auto;
+} */
+
+.missin_inner_part .mission_shape::before {
+    background: #f2ff33;
+    /* background: linear-gradient(to bottom, #f1ff33, #f1ff33b7, #f1ff3300), url(../../../public/assets/images/banner-1.webp); */
+    /* background: linear-gradient(to bottom, #f1ff33a4, #f1ff33a4), url(../../../public/assets/images/banner-1.webp); */
+    /* box-shadow: 1px 1px 30px 1px #f2ff33; */
+    border-radius: 50%;
+    content: "";
+    height: 110vh;
+    left: -220px;
+    position: absolute;
+    top: 0;
+    bottom: 130px;
+    margin: auto;
+    transform: rotate(20deg);
+    width: 120%;
+    z-index: 1;
+}
+
+.mission_inner_content {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.missin_inner_part h2 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+
+.mission-title {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.mission-description {
+    font-size: 16px;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+/* .mission-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+} */
+
+.mission-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.mission-icon {
+    font-size: 24px;
+    color: #94ffe3;
+}
+
+.mission-item h4 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.mission-item p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.horse_second_sec h2 {
+    font-size: 20px !important;
+}
+
+.archery_main_heading {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 991px) {
+    .mission-item h4 {
+        font-size: 14px;
+    }
+
+    .missin_inner_part::before {
+        width: 226%;
+        bottom: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        margin: auto;
+    }
+
+    .mission-box {
+        width: 100% !important;
+        padding: 0 20px !important;
+        height: 100%;
+    }
+
+    .missin_inner_part h2 {
+        font-size: 19px !important;
+    }
+
+    .missin_inner_part p {
+        font-size: 13px;
+    }
+
+    .missin_inner_part .mission_shape::before {
+        width: 185%;
+    }
+
+    .mission_inner_content {
+        padding: 0 10px;
+    }
+}
+
+@media (min-width:500px) and (max-width: 2110px) {
+    .missin_inner_part .mission_shape::before {
+        height: 120vh;
+        bottom: 160px;
+        left: -200px;
+    }
+
+    .missin_inner_part h2 {
+        font-size: 31px;
+    }
+
+    .mission_inner_content {
+        padding: 0 50px;
+    }
+
+    .missin_inner_part p {
+        font-size: 12px !important;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .missin_inner_part .mission_shape::before {
+        height: 100vh;
+        left: -300px;
+    }
+
+    .mission_inner_content {
+        padding: 0 50px;
+    }
+
+    .missin_inner_part::before {
+        height: 110% !important;
+        width: 100% !important;
+    }
+
+    /* .missin_inner_part h2 {
+        font-size: 80px !important;
+    } */
+}
+
+@media screen and (max-width: 400px) {
+    .missin_inner_part .mission_shape::before {
+        width: 205%;
+        height: 120vh;
+    }
+}

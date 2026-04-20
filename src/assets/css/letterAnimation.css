@@ -1,0 +1,35 @@
+.word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+
+.letter {
+  display: inline-block;
+  font-family: "Sneaker", sans-serif;
+  white-space: pre;
+}
+
+.letter-main {
+  position: relative;
+  z-index: 2;
+  color: #111;
+  transform: translateX(60px) rotate(-15deg);
+  opacity: 0;
+}
+
+.letter-ghost {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  color: #ccc;
+  transform: translateX(100px) rotate(-15deg);
+  opacity: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .letter {
+    line-height: 30px;
+  }
+}

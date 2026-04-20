@@ -1,0 +1,70 @@
+.mouse-cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    border-radius: 50%;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.mouse-cursor.cursor-inner,
+.mouse-cursor.cursor-outer {
+    pointer-events: none;
+    -webkit-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease;
+}
+
+.mouse-cursor.cursor-inner.cursor-visible,
+.mouse-cursor.cursor-outer.cursor-visible {
+    visibility: visible;
+}
+
+.mouse-cursor.cursor-inner.cursor-hidden,
+.mouse-cursor.cursor-outer.cursor-hidden {
+    visibility: hidden;
+}
+
+.mouse-cursor.cursor-inner {
+    margin-left: -3px;
+    margin-top: -3px;
+    width: 6px;
+    height: 6px;
+    z-index: 100;
+    background-color: #F2FF33;
+    -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out, margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out, margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.mouse-cursor.cursor-inner.cursor-hover {
+    margin-left: -40px;
+    margin-top: -40px;
+    width: 80px;
+    height: 80px;
+    background-color: #F2FF33;
+    opacity: 0.3;
+}
+
+.mouse-cursor.cursor-outer {
+    margin-left: -15px;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #F2FF33;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 100;
+    opacity: 0.5;
+    -webkit-transition: all 0.08s ease-out;
+    transition: all 0.08s ease-out;
+}
+
+.mouse-cursor.cursor-outer.cursor-hover {
+    opacity: 0;
+}
+
+@media screen and (max-width: 991px) {
+    .mouse-cursor {
+        display: none;
+    }
+}

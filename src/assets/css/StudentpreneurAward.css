@@ -1,0 +1,213 @@
+/* SPACER */
+.student_award_sec .sp-spacer {
+    height: 40vh;
+}
+
+/* STICKY COLUMN */
+.student_award_sec .hero-visual-col {
+    position: relative;
+}
+
+/* MAKE VISUAL STICK */
+.student_award_sec .hero-visual {
+    position: sticky;
+    top: 120px;
+    /* 🔥 adjust based on header height */
+}
+
+/* OPTIONAL: keep height for proper behavior */
+.student_award_sec .hero-wrapper {
+    padding: 100px 0;
+}
+
+/* CONTAINER */
+.student_award_sec .sp-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SECTION */
+.student_award_sec .sp-section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+/* WRAPPERS */
+.student_award_sec .sp-outer,
+.student_award_sec .sp-inner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* BACKGROUND */
+.student_award_sec .sp-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    width: 100%;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+/* CONTENT */
+.student_award_sec .sp-content {
+    /* text-align: center; */
+    max-width: 900px;
+    padding: 20px 40px 20px 50px;
+    backdrop-filter: blur(15px);
+    color: #ffffff;
+}
+
+/* TITLE */
+.student_award_sec .sp-content h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* DESC */
+.student_award_sec .sp-content .desc {
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+/* LIST */
+.student_award_sec .sp-content ul {
+    list-style: circle;
+    padding: 0;
+}
+
+.student_award_sec .sp-content li {
+    font-size: 15px;
+    margin: 6px 0;
+    transition: 0.3s;
+}
+
+.student_award_sec .sp-content li:hover {
+    transform: translateX(10px);
+    color: #F2FF33;
+}
+
+/* BACKGROUNDS */
+.student_award_sec .section-0 .sp-bg {
+    background: linear-gradient(#00000099, #00000099),
+        url("../../../public/assets/images/inspiration/insp-1.jpg");
+}
+
+.student_award_sec .section-1 .sp-bg {
+    background: linear-gradient(#00000099, #00000099),
+        url("../../../public/assets/images/inspiration/insp-2.jpg");
+}
+
+.student_award_sec .section-2 .sp-bg {
+    background: linear-gradient(#00000099, #00000099),
+        url("../../../public/assets/images/inspiration/insp-3.jpg");
+}
+
+.student_award_sec .section-3 .sp-bg {
+    background: linear-gradient(#00000099, #00000099),
+        url("../../../public/assets/images/inspiration/insp-4.jpg");
+}
+
+.student_award_sec .section-4 .sp-bg {
+    background: linear-gradient(#00000099, #00000099),
+        url("../../../public/assets/images/inspiration/insp-5.jpg");
+}
+
+.student_award_sec .section-5 .sp-bg {
+    background: linear-gradient(#00000099, #00000099),
+        url("../../../public/assets/images/inspiration/insp-6.jpg");
+}
+
+.student_award_sec .section-6 .sp-bg {
+    background: linear-gradient(#00000099, #00000099),
+        url("../../../public/assets/images/inspiration/insp-7.jpg");
+}
+
+.student_award_sec {
+    position: relative;
+}
+
+/* wrapper controls stop */
+.cta-wrapper {
+    position: relative;
+}
+
+/* default fixed */
+.fixed-cta {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    width: 95%;
+    margin: auto;
+    z-index: 999;
+    padding: 20px;
+    border-radius: 100px;
+    background: #0000007c;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.fixed-cta.is-fixed {
+    position: absolute;
+    bottom: 0;
+}
+
+.student_award_sec {
+    position: relative;
+}
+
+@media screen and (min-width: 992px) {
+    .cta-wrapper {
+        padding-bottom: 115px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .fixed-cta {
+        border-radius: 20px;
+        bottom: 10px;
+    }
+
+    .fixed-cta p {
+        font-size: 12px;
+    }
+
+    .student_award_sec .sp-content h2 {
+        font-size: 33px;
+    }
+
+    .guru_award_parent button,
+    .guru_award_parent .btn-ghost {
+        padding: 10px 20px !important;
+    }
+
+    .guru_award_parent button span {
+        font-size: 14px;
+    }
+
+    .cta-wrapper {
+        padding-bottom: 215px;
+    }
+
+    /* .fixed-cta {
+        position: relative !important;
+        bottom: 0;
+        border-radius: 20px;
+    } */
+
+    .student_award_sec .hero-wrapper {
+        padding: 60px 0;
+    }
+
+}

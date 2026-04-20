@@ -1,0 +1,236 @@
+.archer-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: url(https://ssvmtransformingindia.com/assets/images/banner-1.webp);
+    background-size: cover;
+    background-position: center; */
+}
+
+.archer-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.archer-section .lottie-container {
+    width: 100%;
+    max-width: 1400px;
+}
+
+.archer-section .lottie-container svg {
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+}
+
+.archer-text img {
+    width: 285px;
+}
+
+.archer-text {
+    position: absolute;
+    top: 0%;
+    left: 80px;
+    max-width: 450px;
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.archer-text h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.archer-text p {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #ddd;
+}
+
+/* PRIMARY BUTTON */
+.ssvm_reg_butt {
+    position: relative;
+    padding: 0.8rem 1.6rem;
+    border-radius: 999px;
+    background: linear-gradient(120deg, #f2ff33, #5f615c);
+    color: #000;
+    border: none;
+    font-weight: 600;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px #f2ff334d;
+}
+
+/* animated gradient */
+.ssvm_reg_butt::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, #f2ff33, #5f615c, #f2ff33);
+    background-size: 200% 200%;
+    z-index: -1;
+    transition: 0.4s;
+}
+
+/* glow pulse */
+.ssvm_reg_butt::after {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, #f2ff33 0%, transparent 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: 0.4s;
+    z-index: -1;
+}
+
+.ssvm_reg_butt:hover::before {
+    background-position: right center;
+}
+
+.ssvm_reg_butt:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.15;
+}
+
+.ssvm_reg_butt:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 20px 50px #f2ff3380;
+}
+
+@media screen and (max-width: 991px) {
+    .archery_anim_content {
+        position: relative !important;
+    }
+}
+
+@media (max-width: 1025px) {
+    .archer-text h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .archer-text p {
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .archery_main_heading_inner {
+        margin-bottom: 20px;
+    }
+
+    .archery_main_heading {
+        margin-top: 50px;
+        margin-bottom: 60px;
+    }
+
+    .archery_anim_content {
+        position: relative;
+        top: 20px !important;
+    }
+
+    .archer-text img {
+        width: 240px;
+    }
+
+    .archer-wrapper {
+        position: relative;
+        min-height: auto;
+        padding: 40px 0;
+        flex-direction: column;
+    }
+
+    .archer-text {
+        position: relative;
+        padding: 0 15px;
+        top: 0;
+        left: 0;
+        max-width: none;
+        opacity: 1;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .archer-section {
+        position: relative;
+        top: 85px;
+    }
+
+    .archer-section .lottie-container {
+        width: 100%;
+    }
+
+    .archery_main_heading {
+        opacity: 1 !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .archery_main_heading .reveal_heading {
+        font-size: 32px !important;
+        line-height: 1.2 !important;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .archery_main_heading h2 {
+        font-size: 50px !important;
+    }
+
+    .lottie-container {
+        max-width: 100% !important;
+    }
+
+    .archer-section {
+        width: 100%;
+        height: 100%;
+    }
+
+    .center-text {
+        width: 100% !important;
+    }
+
+    .archer-text img {
+        width: 300px !important;
+    }
+
+    .left_fonder_content h2 {
+        font-size: 40px !important;
+    }
+
+    .left_fonder_content h2:first-child {
+        font-size: 50px !important;
+    }
+
+    .left_fonder_content h2:last-child {
+        font-size: 28px !important;
+    }
+
+    .archer-text {
+        max-width: 36% !important;
+        bottom: 30% !important;
+        top: auto !important;
+    }
+
+    .archer-text h2 {
+        font-size: 57px !important;
+        margin-top: 20px;
+    }
+
+    .archer-text p {
+        font-size: 20px !important;
+    }
+}
