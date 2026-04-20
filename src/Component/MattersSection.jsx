@@ -107,7 +107,7 @@ const MattersSection = () => {
 
                 <div ref={containerRef} className="row g-lg-1 g-3 mt-lg-5 mt-2 justify-content-center">
                     {values.map((item, index) => (
-                        <div key={index} className="col-lg-3 col-md-6 col-11 matter-card-col py-3 py-lg-0" data-aos="fade-up">
+                        <div key={index} className="col-lg-3 col-md-6 col-11 matter-card-col" data-aos="fade-up">
                             <div className="matter-card h-100" style={{
                                 border: `1px solid ${index % 2 === 0 ? "rgba(242,255,51,0.2)" : "rgba(255,255,255,0.1)"}`,
                             }}>
@@ -137,7 +137,7 @@ const MattersSection = () => {
                     ))}
                 </div>
 
-                <div className="row mt-lg-5 mt-4 pt-lg-5 pt-4 justify-content-center">
+                <div className="row mt-lg-5 mt-4 pt-lg-5 pt-4 matters-footer justify-content-center">
                     <div className="col-lg-8 col-11 text-center" data-aos="zoom-in">
                         {/* <TitleReveal
                             text="Shape Tomorrow Through"
@@ -159,10 +159,11 @@ const MattersSection = () => {
                             }}
                             triggerRef={sectionRef}
                         /> */}
-                        <div className="p-lg-4 p-3 mt-4 rounded-4" style={{
+                        <div className="p-lg-4 p-3 rounded-4" style={{
                             borderLeft: "4px solid #F2FF33",
                             background: "rgba(242,255,51,0.05)",
-                            textAlign: "center"
+                            textAlign: "center",
+                            marginTop: "110px"
                         }}>
                             <p className="text-white mb-0">
                                 If students are expected to shape the future, they need platforms that treat them like they already can.
